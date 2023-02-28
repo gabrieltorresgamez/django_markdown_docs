@@ -29,7 +29,7 @@ a {
 }
 
 .markdown-body {
-  background-color: #4c1c24;
+  /* background-color: #fff; my eyes hurt */
   padding: 20px;
   margin: 0 15% 5% 15%;
   rounded: 10px;
