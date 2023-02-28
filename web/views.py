@@ -1,10 +1,9 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import Http404
 from django.template import loader
 from .models import MarkdownFile
-from django.http import Http404
 
-import markdown
+import mdtex2html
 import urllib.request as get
 
 
@@ -26,9 +25,8 @@ def render_markdown(request, link):
         # download the file
         file = get.urlopen(url).read().decode()
         # render the file with tables, images, etc
-        html = markdown.markdown(
+        html = mdtex2html.convert(
             file,
-            output_format="html5",
             extensions=[
                 "markdown.extensions.extra",
             ],

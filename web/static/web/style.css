@@ -1,0 +1,22 @@
+/* classic css for a md file */
+@import url("https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css");
+@import url("https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.css");
+@import url("https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css");
+
+/* error latex */
+.tooltip .tooltiptext {
+    display: none;
+}
+.tooltip:hover .tooltiptext {
+    display: inline;
+    border-radius: 0.3em;
+    background-color: #777;
+    position: fixed;
+}
+
+/* custom css */
+.markdown-body {
+  padding: 20px;
+  margin: 0 200px;
+  rounded: 10px;
+}

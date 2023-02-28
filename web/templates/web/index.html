@@ -1,10 +1,27 @@
-<h1>Available Links</h1>
-{% if links %}
-<ul>
-    {% for link in links %}
-    <li><a href="/{{ link.name }}">{{ link.name }}</a></li>
-    {% endfor %}
-</ul>
-{% else %}
-<p>No pages are available.</p>
-{% endif %}
+<!doctype html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Overview</title>
+    <meta name="description" content="Overview page">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/web/style.css">
+</head>
+
+<body>
+    <h1>Available Links</h1>
+    {% if links %}
+    <ul>
+        {% for link in links %}
+        <li><a href="/{{ link.name }}">{{ link.name }}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No pages are available.</p>
+    {% endif %}
+</body>
+
+</html>

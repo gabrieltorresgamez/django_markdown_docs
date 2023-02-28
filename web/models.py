@@ -8,4 +8,4 @@ class MarkdownFile(models.Model):
     link = models.CharField(max_length=255)
 
     def __str__(self):
-        return {"name": self.name}
+        return self.name
