@@ -1,0 +1,10 @@
+<h1>Available Links</h1>
+{% if links %}
+<ul>
+    {% for link in links %}
+    <li><a href="/{{ link.name }}">{{ link.name }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No pages are available.</p>
+{% endif %}

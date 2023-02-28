@@ -1,0 +1,7 @@
+{% if link and html and url %}
+<h1>Viewing file: <a href={{ url }}>{{ link }}</a></h1>
+<p>Go <a href="/">back</a>:</p>
+{{ html|safe }}
+{% else %}
+<p>Page error.</p>
+{% endif %}
