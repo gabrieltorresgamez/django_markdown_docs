@@ -26,6 +26,11 @@ SECRET_KEY = "this is totally secure trust me please please please"
 DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = [
+    "http://0.0.0.0",
+    "http://localhost",
+    "https://docs.immoprice.ch",
+]
 
 
 # Application definition
