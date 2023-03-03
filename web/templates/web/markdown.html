@@ -13,7 +13,8 @@
     <meta name="description" content="Pageview">
     {% endif %}
     <!-- CSS -->
-    <link rel="stylesheet" href="/static/web/style.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'web/style.css' %}">
 </head>
 
 <body>
